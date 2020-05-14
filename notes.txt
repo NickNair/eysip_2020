@@ -1,0 +1,1000 @@
+  682  rostopic type /turtle1/cmd_vel 
+  683  rosmsg show geometry_msgs/Twist
+  684  rostopic pub /turtle1/cmd_vel geometry_msgs/Twist "linear:
+  685    x: 0.0
+  686    y: 0.0
+  687    z: 0.0
+  688  angular:
+  689    x: 0.0
+  690    y: 0.0
+  691    z: 10" 
+  692  rostopic pub /turtle1/cmd_vel geometry_msgs/Twist "linear:
+  693    x: 0.0
+  694    y: 5.0
+  695    z: 0.0
+  696  angular:
+  697    x: 0.0
+  698    y: 0.0
+  699    z: 2" 
+  700  rostopic pub /turtle1/cmd_vel geometry_msgs/Twist "linear:
+  701    x: 0.0
+  702    y: 0.0
+  703    z: 0.0
+  704  angular:
+  705    x: 0.0
+  706    y: 0.0
+  707    z: 10" 
+  708  rostopic pub /turtle1/cmd_vel geometry_msgs/Twist "linear:
+  709    x: 2.0
+  710    y: 0.0
+  711    z: 0.0
+  712  angular:
+  713    x: 0.0
+  714    y: 0.0
+  715    z: 1.8" 
+  716  rostopic pub /turtle1/cmd_vel geometry_msgs/Twist -r  "linear:
+  717    x: 0.0
+  718    y: 5.0
+  719    z: 0.0
+  720  angular:
+  721    x: 0.0
+  722    y: 0.0
+  723    z: 2" 
+  724  rostopic pub /turtle1/cmd_vel geometry_msgs/Twist -1  "linear:
+  725    x: 0.0
+  726    y: 5.0
+  727    z: 0.0
+  728  angular:
+  729    x: 0.0
+  730    y: 0.0
+  731    z: 2" 
+  732  rostopic pub /turtle1/cmd_vel geometry_msgs/Twist -1 "linear:
+  733    x: 2.0
+  734    y: 0.0
+  735    z: 0.0
+  736  angular:
+  737    x: 0.0
+  738    y: 0.0
+  739    z: 1.8" 
+  740  rostopic pub /turtle1/cmd_vel geometry_msgs/Twist -1 "linear:
+  741    x: 2.0
+  742    y: 0.0
+  743    z: 0.0
+  744  angular:
+  745    x: 0.0
+  746    y: 0.0
+  747    z: 1.8" 
+  748  rostopic pub /turtle1/cmd_vel geometry_msgs/Twist -3 "linear:
+  749    x: 2.0
+  750    y: 0.0
+  751    z: 0.0
+  752  angular:
+  753    x: 0.0
+  754    y: 0.0
+  755    z: 1.8" 
+  756  rostopic pub /turtle1/cmd_vel geometry_msgs/Twist 3 "linear:
+  757    x: 2.0
+  758    y: 0.0
+  759    z: 0.0
+  760  angular:
+  761    x: 0.0
+  762    y: 0.0
+  763    z: 1.8" 
+  764  rostopic pub /turtle1/cmd_vel geometry_msgs/Twist -2 "linear:
+  765    x: 2.0
+  766    y: 0.0
+  767    z: 0.0
+  768  angular:
+  769    x: 0.0
+  770    y: 0.0
+  771    z: 1.8" 
+  772  rostopic pub /turtle1/cmd_vel geometry_msgs/Twist -1 "linear:
+  773    x: 2.0
+  774    y: 0.0
+  775    z: 0.0
+  776  angular:
+  777    x: 0.0
+  778    y: 0.0
+  779    z: 1.8" 
+  780  rostopic pub /turtle1/cmd_vel geometry_msgs/Twist -r 1 "linear:
+  781    x: 2.0
+  782    y: 0.0
+  783    z: 0.0
+  784  angular:
+  785    x: 0.0
+  786    y: 0.0
+  787    z: 1.8" 
+  788  rostopic pub /turtle1/cmd_vel geometry_msgs/Twist -r 1 "linear:
+  789    x: 2.0
+  790    y: 0.0
+  791    z: 0.0
+  792  angular:
+  793    x: 0.0
+  794    y: 0.0
+  795    z: 1.8" 
+  796  rostopic pub /turtle1/cmd_vel geometry_msgs/Twist -r 1 "linear:
+  797    x: 2.0
+  798    y: 0.0
+  799    z: 0.0
+  800  angular:
+  801    x: 0.0
+  802    y: 0.0
+  803    z: 1.8" 
+  804  rosservice list 
+  805  rosservice list /turtle
+  806  rosservice list /turtle1
+  807  rosservice type /clear 
+  808  rosservice call /clear 
+  809  rosservice call /spawn 
+  810  rosservice call /spawn | rossrv show 
+  811  rosservice catype /spawn | rossrv show 
+  812  rosservice type /spawn | rossrv show 
+  813  rosservice call /spawn 2 2 0.5 ""
+  814  rosparam list 
+  815  rosparam set /nikhil/background_r 150
+  816  rosservice call /clear 
+  817  rosparam set /nikhil/background_b 150
+  818  rosservice call /clear 
+  819  rosparam set /turtlesim/background_b 150
+  820  rosservice call /clear 
+  821  rosparam set /turtlesim/background_r 150
+  822  rosservice call /clear 
+  823  rosparam get /
+  824  rosrun turtlesim turtlesim_node 
+  825  rostopic pub /turtle1/cmd_vel geometry_msgs/Twist -r 1 "linear:
+  826    x: 2.0
+  827    y: 0.0
+  828    z: 0.0
+  829  angular:
+  830    x: 0.0
+  831    y: 0.0
+  832    z: 0.0" 
+  833  rosnode cleanup
+  834  rosrun rqt_graph rqt_graph 
+  835  rostopic pub /turtlesim1/turtle1/cmd_vel geometry_msgs/Twist "linear:
+  836    x: 2.0
+  837    y: 0.0
+  838    z: 0.0
+  839  angular:
+  840    x: 0.0
+  841    y: 0.0
+  842    z: 1.8" 
+  843  rostopic pub /turtlesim1/turtle1/cmd_vel geometry_msgs/Twist -r 1 "linear:
+  844    x: 2.0
+  845    y: 0.0
+  846    z: 0.0
+  847  angular:
+  848    x: 0.0
+  849    y: 0.0
+  850    z: 1.8" 
+  851  rosrun rqt_console rqt_console 
+  852  rosrun rqt_logger_level rqt_logger_level 
+  853  cd catkin_ws/
+  854  roscd beginner_tutorials
+  855  cd s
+  856  cd src
+  857  cd ..
+  858  cd ,,
+  859  cd ..
+  860  source devel/setup.bash
+  861  cd catkin_ws/
+  862  source devel/setup.bash
+  863  roscd beginner_tutorials/
+  864  mkdir launch
+  865  cd launch
+  866  gedit turtlemimic.launch
+  867  roslaunch beginner_tutorials turtlemimic.launch 
+  868  roscore 
+  869  firefox
+  870  sudo apt-get update
+  871  sudo apt-get install --reinstall ubuntu-desktop 
+  872  reboot 
+  873  xrandr -o normal 
+  874  cd catkin_ws/
+  875  source ./devel/setup.bash
+  876  rosrun beginner_tutorials add_two_ints_client.py 
+  877  rosrun beginner_tutorials add_two_ints_client.py 23 45
+  878  roscd
+  879  CD ~
+  880  cd ~
+  881  rostest -h
+  882  roded
+  883  rosed
+  884  rosed roscpp logger.msg
+  885  rosed roscpp Logger.msg
+  886  roscd 
+  887  cd ~
+  888  cd catkin_ws/
+  889  roscd beginner_tutorials
+  890  . ~/catkin_ws/devel/setup.bash
+  891  roscd beginner_tutorials
+  892  roscd catkin_ws
+  893  cd ..
+  894  source . ~/catkin_ws/devel/setup.bash
+  895  roscd beginner_tutorials
+  896  mkdir msg
+  897  echo "int64 num" > msg/Num.msg
+  898  ls
+  899  cd msg/
+  900  ls
+  901  cat Num.msg 
+  902  gedit Num.msg 
+  903  cat Num.msg 
+  904  cd ..
+  905  ls
+  906  gedit package.xml 
+  907  gedit CMakeLists.txt 
+  908  rosmsg show beginner_tutorials/Num 
+  909  rosmsg show Num
+  910  mkdir srv
+  911  roscp rospy_tutorials AddTwoInts.srv srv/AddTwoInts.srv
+  912  gedit  CMakeLists.txt 
+  913  rossrv show beginner_tutorials/AddTwoInts 
+  914  rossrv show AddTwoInts
+  915  cd../..
+  916  cd ../..
+  917  catkin_make install
+  918  cd -
+  919  rosmsg -h
+  920  wget https://raw.github.com/ros/ros_tutorials/kinetic-devel/rospy_tutorials/001_talker_listener/talker.py
+  921  chmod +x talker.py
+  922  gedit talker.py 
+  923  wget https://raw.github.com/ros/ros_tutorials/kinetic-devel/rospy_tutorials/001_talker_listener/listener.py
+  924  chmod +x listener.py 
+  925  ls
+  926  gedit listener.py 
+  927  cd ~
+  928  cd catkin_ws/
+  929  catkin_make
+  930  source ./devel/setup.bash
+  931  rosrun beginner_tutorials talker.py 
+  932  roscd beginner_tutorials/
+  933  mkdir scripts
+  934  cd scripts/
+  935  gedit add_two_ints_server.py
+  936  chmod +x add_two_ints_server.py 
+  937  gedit add_two_ints_server.py
+  938  gedit add_two_ints_client.py
+  939  gedit add_two_ints_server.py
+  940  gedit add_two_ints_client.py
+  941  chmod +x add_two_ints_client.py 
+  942  gedit add_two_ints_client.py
+  943  cd ~/catkin_ws/
+  944  catkin_make
+  945  rosrun beginner_tutorials add_two_ints_server.py 
+  946  cd src/beginner_tutorials/
+  947  ls
+  948  cd scripts/
+  949  gedit add_two_ints_server.py 
+  950  cd ~/catkin_ws/
+  951  catkin_make
+  952  rosrun beginner_tutorials add_two_ints_server.py 
+  953  cd catkin_ws/
+  954  source ./devel/setup.bash
+  955  rosrun beginner_tutorials listener.py 
+  956  rosrun beginner_tutorials add_two_ints_client.py  31 23
+  957  rosrun rqt_graph rqt_graph 
+  958  roscore 
+  959  rosnode list 
+  960  rosnode -h
+  961  rosnode ping /turtlesim1/sim 
+  962  rosnode -h
+  963  rosnode ping -h
+  964  rospy -h
+  965  rosrun rqt_console rqt_console 
+  966  mkdir ~/bagfiles
+  967  cd ~/bagfiles/
+  968  rosbag record -a
+  969  ls
+  970  cat 2020-05-13-16-57-59.bag 
+  971  clear
+  972  rosbag info 2020-05-13-16-57-59.bag 
+  973  rosbag play 2020-05-13-16-57-59.bag 
+  974  xrandr -o normal 
+  975  cd catkin_ws/
+  976  ./devel/setup.bash
+  977  source ./devel/setup.bash
+  978  rospack depends1 beginner_tutorials 
+  979  roscd beginner_tutorials/
+  980  ls
+  981  cat package.xml 
+  982  c;ear
+  983  clear
+  984  cd ~/catkin_ws/
+  985  roscd turtlesim/
+  986  ls
+  987  cd msg/
+  988  ls
+  989  cd ..
+  990  ls
+  991  cd srv
+  992  ls
+  993  cd ..
+  994  ls
+  995  cat package.xml 
+  996  cd ~/catkin_ws/
+  997  ls
+  998  cd src/
+  999  cd beginner_tutorials/
+ 1000  ls
+ 1001  cd launch/
+ 1002  ls
+ 1003  gedit turtlemimic.launch 
+ 1004  roslaunch beginner_tutorials turtlemimic.launch 
+ 1005  gedit turtlemimic.launch 
+ 1006  roslaunch beginner_tutorials turtlemimic.launch 
+ 1007  gedit turtlemimic.launch 
+ 1008  roslaunch beginner_tutorials turtlemimic.launch 
+ 1009  cd ~/catkin_ws/
+ 1010  rosrun turtlesim turtlesim_node 
+ 1011  cd catkin_ws/
+ 1012  cd s
+ 1013  cd src/
+ 1014  cd beginner_tutorials/
+ 1015  ls
+ 1016  cd srv
+ 1017  ls
+ 1018  cd ..
+ 1019  ls
+ 1020  cd srv
+ 1021  ls
+ 1022  cat AddTwoInts.srv 
+ 1023  cd ..
+ 1024  ls
+ 1025  cat CMakeLists.txt 
+ 1026  cd ..
+ 1027  ls
+ 1028  cd beginner_tutorials/
+ 1029  ls
+ 1030  cd include/
+ 1031  ls
+ 1032  cd beginner_tutorials/
+ 1033  ls
+ 1034  cd ..
+ 1035  ls
+ 1036  cd ..
+ 1037  ls
+ 1038  cat package.xml 
+ 1039  cd ..
+ 1040  ls
+ 1041  cd beginner_tutorials/
+ 1042  ls
+ 1043  cd s
+ 1044  cdsrv
+ 1045  cd srv
+ 1046  ls
+ 1047  cd ..
+ 1048  ls
+ 1049  cd include/
+ 1050  ls
+ 1051  cd ..
+ 1052  ls
+ 1053  cd ..
+ 1054  ls
+ 1055  cd src/
+ 1056  ls
+ 1057  cd .
+ 1058  cd ..
+ 1059  cd devel/
+ 1060  ls
+ 1061  cd include/
+ 1062  ls
+ 1063  cd beginner_tutorials/
+ 1064  ls
+ 1065  cd ..
+ 1066  cd ~/catkin_ws/
+ 1067  ls
+ 1068  roscd turtlesim
+ 1069  ls
+ 1070  cd srv
+ 1071  ls
+ 1072  cd ..
+ 1073  cd ~/catkin_ws/
+ 1074  rosrun turtlesim turtle_teleop_key 
+ 1075  rosrun turtlesim turtlesim_node 
+ 1076  roscore
+ 1077  locate spawn.srv
+ 1078  locate src
+ 1079  clear
+ 1080  locate kill.srv
+ 1081  cd catkin_ws/
+ 1082  roscd turtlesim/
+ 1083  ls
+ 1084  cd srv
+ 1085  ls
+ 1086  rosrun turtlesim turtlesim_node 
+ 1087  rosservice call /spawn "x: 0.0
+ 1088  y: 0.0
+ 1089  theta: 0.0
+ 1090  name: ''" 
+ 1091  rosservice call /spawn "x: 10.0
+ 1092  y: 10.0
+ 1093  theta: 0.0
+ 1094  name:hi ''" 
+ 1095  rosservice call /spawn "x: 1.0
+ 1096  y: 1.0
+ 1097  theta: 0.0
+ 1098  name:hi ''" 
+ 1099  rosservice call /spawn "x: 1.0
+ 1100  y: 1.0
+ 1101  theta: 0.0
+ 1102  name:"hi" ''" 
+ 1103  rosservice call /spawn "x: 1.0
+ 1104  y: 1.0
+ 1105  theta: 0.0
+ 1106  name:"hi" " 
+ 1107  rosservice call /spawn "x: 1.0
+ 1108  y: 1.0
+ 1109  theta: 0.0
+ 1110  name:'' " 
+ 1111  rosservice call /spawn "x: 0.0
+ 1112  y: 0.0
+ 1113  theta: 0.0
+ 1114  name: ''" 
+ 1115  rosservice call /spawn "x: 0.0
+ 1116  y: 0.5
+ 1117  theta: 0.0
+ 1118  name: ''" 
+ 1119  rosservice call /spawn "x: 0.0
+ 1120  y: 5.0
+ 1121  theta: 0.0
+ 1122  name: ''" 
+ 1123  rostopic list
+ 1124  rostopic info /turtle1/cmd_vel 
+ 1125  rosmsg show geometry_msgs/Twist
+ 1126  rosrun turtlesim turtlesim_node 
+ 1127  cd catkin_ws/
+ 1128  rosservice list
+ 1129  rostopic list
+ 1130  rosservice info /spawn 
+ 1131  rosservice -h
+ 1132  rosservice info spawm
+ 1133  rosservice info spawn
+ 1134  rosservice type spawn
+ 1135  rosservice type /spawn
+ 1136  rosservice list 
+ 1137  rosservice type /spawn
+ 1138  rosservice list 
+ 1139  rosservice type /spawn
+ 1140  rosservice info /spawn 
+ 1141  cd catkin_ws/
+ 1142  source ./devel/setup.bash
+ 1143  rosrun beginner_tutorials add_two_ints_client.py 2 3
+ 1144  cd eysip/
+ 1145  ld
+ 1146  ls
+ 1147  cd src
+ 1148  ls
+ 1149  cd test/
+ 1150  ls
+ 1151  cd ~/eysip/
+ 1152  catkin_make
+ 1153  cd 
+ 1154  cd eysip/
+ 1155  catkin_make
+ 1156  cd src/
+ 1157  cd test/
+ 1158  catkin_make
+ 1159  cd ..
+ 1160  catkin_make
+ 1161  ls
+ 1162  cd catkin_ws/
+ 1163  catkin_make
+ 1164  source ./devel/setup.bash
+ 1165  catkin_make
+ 1166  source ./devel/setup.bash
+ 1167  roslaunch eysip turtlesim_move_circle.launch 
+ 1168  roslaunch eysip turtle_test.test 
+ 1169  rosservice list
+ 1170  rostopic list 
+ 1171  cd catkin_ws/
+ 1172  source ./devel/setup.bash
+ 1173  cd src/
+ 1174  rosrun beginner_tutorials add_two_ints_server.py 
+ 1175  cd beginner_tutorials/
+ 1176  cd scripts/
+ 1177  gedit add_two_ints_server.py 
+ 1178  rostopic list -v
+ 1179  roscd ros
+ 1180  cd ~
+ 1181  roscd rosmaster/
+ 1182  roswtf
+ 1183  cd ~/catkin_ws/
+ 1184  cd src/beginner_tutorials/
+ 1185  ls
+ 1186  cd s
+ 1187  cd src
+ 1188  ls
+ 1189  cd ..
+ 1190  vim move.py
+ 1191  chmodu+x move.py
+ 1192  chmod u+x move.py
+ 1193  rosrun move.py
+ 1194  cd ~
+ 1195  cd catkin_ws/
+ 1196  source ./devel/setup.bash
+ 1197  rosrun beginner_tutorials move.py 
+ 1198  roscd beginner_tutorials/
+ 1199  vim move.py 
+ 1200  rosrun beginner_tutorials move.py 
+ 1201  vim move.py 
+ 1202  rosrun beginner_tutorials move.py 
+ 1203  vim move.py 
+ 1204  roscd turtlesim/
+ 1205  ls
+ 1206  cd srv/
+ 1207  ls
+ 1208  cd ..
+ 1209  cd ''
+ 1210  cd ..
+ 1211  ls
+ 1212  roscd beginner_tutorials/
+ 1213  vim move.py 
+ 1214  rosrun beginner_tutorials move.py 
+ 1215  vim move.py 
+ 1216  rosrun beginner_tutorials move.py 
+ 1217  vim move.py 
+ 1218  rosrun beginner_tutorials move.py 
+ 1219  vim move.py 
+ 1220  rosrun beginner_tutorials move.py 
+ 1221  vim move.py 
+ 1222  cd ..
+ 1223  catkin_make
+ 1224  cd src/
+ 1225  cd beginner_tutorials/
+ 1226  rosrun beginner_tutorials move.py 
+ 1227  rosrun beginner_tutorials talker.py 
+ 1228  vim move.py 
+ 1229  rosrun beginner_tutorials talker.py 
+ 1230  rosrun beginner_tutorials move.py 
+ 1231  vim move.py 
+ 1232  rosrun beginner_tutorials talker.py 
+ 1233  rosrun beginner_tutorials move.py 
+ 1234  vim move.py 
+ 1235  rosrun beginner_tutorials move.py 
+ 1236  vim move.py 
+ 1237  rosrun beginner_tutorials move.py 
+ 1238  vim move.py 
+ 1239  rosrun beginner_tutorials move.py 
+ 1240  vim move.py 
+ 1241  rosrun beginner_tutorials move.py 
+ 1242  vim move.py 
+ 1243  rosrun beginner_tutorials move.py 
+ 1244  vim move.py 
+ 1245  rosrun beginner_tutorials move.py 
+ 1246  vim move.py 
+ 1247  rosrun beginner_tutorials move.py 
+ 1248  vim move.py 
+ 1249  rosrun beginner_tutorials move.py 
+ 1250  rooservice list
+ 1251  roservice list
+ 1252  rosservice list
+ 1253  vim move.py 
+ 1254  rosrun beginner_tutorials move.py 
+ 1255  vim move.py 
+ 1256  rosrun beginner_tutorials move.py 
+ 1257  rosnode list
+ 1258  rostopic list
+ 1259  vim move.py 
+ 1260  rosrun beginner_tutorials move.py 
+ 1261  vim move.py 
+ 1262  rosrun beginner_tutorials move.py 
+ 1263  vim move.py 
+ 1264  rosrun beginner_tutorials move.py 
+ 1265  vim move.py 
+ 1266  rosrun beginner_tutorials move.py 
+ 1267  vim move.py 
+ 1268  rosrun beginner_tutorials move.py 
+ 1269  cd ..
+ 1270  roscd beginner_tutorials/
+ 1271  cd scripts/
+ 1272  ls
+ 1273  gedit add_two_ints_server.py 
+ 1274  gedit add_two_ints_client.py 
+ 1275  rosnode 
+ 1276  rosnode ping /turtlesim_circle_node 
+ 1277  rosnode list 
+ 1278  rosnode -h
+ 1279  rostopic list 
+ 1280  rostopic -g
+ 1281  rostopic echo /turtle1/cmd_vel 
+ 1282  cd catkin_ws/
+ 1283  roslaunch eysip turtle_test.test 
+ 1284  source ./devel/setup.bash
+ 1285  roslaunch eysip turtle_test.test 
+ 1286  roscd eysip/
+ 1287  ls
+ 1288  cd src
+ 1289  ls
+ 1290  cd test/
+ 1291  ls
+ 1292  cat pub_test.py 
+ 1293  cd ..
+ 1294  ls
+ 1295  cd test/
+ 1296  cat turtlesim_circle.py 
+ 1297  roslaunch eysip turtlesim_circle.launch
+ 1298  cd catkin_ws/
+ 1299  source ./devel/setup.bash
+ 1300  roslaunch eysip turtlesim_circle.launch
+ 1301  roslaunch eysip turtlesim_move_circle.launch 
+ 1302  cd catkin_ws/
+ 1303  source ./devel/setup.bah
+ 1304  source ./devel/setup.bash
+ 1305  rostest eysip turtlesim_move_circle.launch 
+ 1306  cd src/
+ 1307  cd eysip/
+ 1308  cd a
+ 1309  ls
+ 1310  cd src/
+ 1311  ls
+ 1312  cd auto_eval/
+ 1313  ls
+ 1314  gedit launchfile_test.py 
+ 1315  gedit test_case_circle.py
+ 1316  gedit test_case_circle_pubsub.py.py
+ 1317  ls
+ 1318  gedit test_case_circle_pubsub.py
+ 1319  gls
+ 1320  ls
+ 1321  gedit turtle_test.test 
+ 1322  gedit turtle launchfile_test.py 
+ 1323  gedit launchfile_test.py 
+ 1324  cd catkin_ws/
+ 1325  source ./devel//setup.bash
+ 1326  rosrun beginner_tutorials listener.py 
+ 1327  source ./devel/setup.bash
+ 1328  source catkin_ws/devel/setup.bash
+ 1329  rosrun beginner_tutorials listener.py 
+ 1330  source catkin_ws/devel/setup.bash
+ 1331  rosrun beginner_tutorials talker.py 
+ 1332  source catkin_ws/devel/setup.bash
+ 1333  rosrun beginner_tutorials talker.py 
+ 1334  source catkin_ws/devel/setup.bash
+ 1335  rosrun beginner_tutorials listener.py 
+ 1336  cd catkin_ws/
+ 1337  source ./devel/setup.bash
+ 1338  roscd beginner_tutorials/
+ 1339  gedit listener.py 
+ 1340  gedit talker.py 
+ 1341  gedit listener.py 
+ 1342  gedit talker.py 
+ 1343  cd catkin_ws/src/
+ 1344  cd beginner_tutorials/
+ 1345  gedit talker.py 
+ 1346  source ./devel/setup.bash
+ 1347  source catkin_ws/devel/setup.bash
+ 1348  rosrun beginner_tutorials listener.py 
+ 1349  cd catkin_ws/
+ 1350  cd src/
+ 1351  ls
+ 1352  cd beginner_tutorials/
+ 1353  ls
+ 1354  gedit talker.py 
+ 1355  cd ~
+ 1356  cd catkin_ws/
+ 1357  source ./devel/setup.bash
+ 1358  roslaunch beginner_tutorials l
+ 1359  rosrun beginner_tutorials talker.py 
+ 1360  cd beginner_tutorials/
+ 1361  cd src/beginner_tutorials/
+ 1362  ls
+ 1363  gedit talker.py 
+ 1364  gedit listener.py 
+ 1365  gedit talker.py 
+ 1366  rosrun rqt_graph rqt_graph 
+ 1367  rosrun beginner_tutorials talker.py 
+ 1368  source catkin_ws/devel/setup.bash
+ 1369  rosrun beginner_tutorials talker.py 
+ 1370  roscore
+ 1371  cd catkin_ws/
+ 1372  cd src/
+ 1373  ls
+ 1374  rocore
+ 1375  roscore
+ 1376  rostopic list
+ 1377  source catkin_ws/devel/setup.bash
+ 1378  rosrun beginner_tutorials listener.py 
+ 1379  source catkin_ws/devel/setup.bash
+ 1380  rosrun beginner_tutorials talker.py 
+ 1381  cd catkin_ws/
+ 1382  ls
+ 1383  cd src/
+ 1384  ls
+ 1385  cd beginner_tutorials/
+ 1386  ls
+ 1387  cd launch/
+ 1388  ls
+ 1389  gedit turtlemimic.launch 
+ 1390  roslaunche turtlemimic.launch 
+ 1391  cd ~
+ 1392  source catkin_ws/devel/setup.bash
+ 1393  roslaunch beginner_tutorials turtlemimic.launch 
+ 1394  source catkin_ws/devel/setup.bash
+ 1395  roslaunch beginner_tutorials turtlemimic.launch 
+ 1396  source catkin_ws/devel/setup.bash
+ 1397  roslaunch beginner_tutorials turtlemimic.launch 
+ 1398  rosnode list 
+ 1399  source catkin_ws/devel/setup.bash
+ 1400  roslaunch beginner_tutorials turtlemimic.launch 
+ 1401  /chatter
+ 1402  rosout
+ 1403  rosrun rqt_console rqt_console 
+ 1404  rostopic echo /chatter 
+ 1405  rosrun rqt_graph rqt_graph 
+ 1406  rostopic echo /chatter 
+ 1407  cd catkin_ws/
+ 1408  cd src/
+ 1409  cd beginner_tutorials/
+ 1410  source ./devel/setup.bash
+ 1411  cd~/c
+ 1412  cd ~/catkin_ws/
+ 1413  source ./devel/setup.bash
+ 1414  rosrun beginner_tutorials talker.py 
+ 1415  cd catkin_ws/
+ 1416  source catkin_ws/devel/setup.bash
+ 1417  source ./devel/setup.bash
+ 1418  rosrun beginner_tutorials listener.py 
+ 1419  rosnode info /talker_3122_1589430294624 
+ 1420  rosnode info /talker_6800_1589436280339 
+ 1421  rosnode -h
+ 1422  rostopic list 
+ 1423  ls
+ 1424  rostopic -h
+ 1425  rostopic type /chatter 
+ 1426  rostopic info /chatter 
+ 1427  rostopic -h
+ 1428  rostopic pub /chatter 
+ 1429  rostopic pub -h
+ 1430  rostopic pub /chatter std_msgs/String navya
+ 1431  rostopic pub /chatter std_msgs/String "navya is sa a"
+ 1432  rostopic pub /chatter std_msgs/String -r 1 "navya is sa a"
+ 1433  rostopic pub /chatter std_msgs/String -r 5 "navya is sa a"
+ 1434  rostopic pub /chatter std_msgs/String -r 40 "navya is sa a"
+ 1435  rostopic list 
+ 1436  rostopic echo /chatter 
+ 1437  rosnode list
+ 1438  rosnode -h
+ 1439  rosnode ping -h
+ 1440  rosrun rqt_graph rqt_graph 
+ 1441  gedit .bashrc 
+ 1442  rosrun beginner_tutorials talker.py 
+ 1443  /usr/bin/python3 /home/nikhil/catkin_ws/src/eysip/src/auto_eval/test_case.py
+ 1444  /usr/bin/python3 /home/nikhil/catkin_ws/src/beginner_tutorials/talker.py
+ 1445  source ./devel/setup.bash
+ 1446  rosrun beginner_tutorials talker.py 
+ 1447  cd ..
+ 1448  rosrun beginner_tutorials talker.py 
+ 1449  rosrun rqt_graph rqt_graph 
+ 1450  cd catkin_ws/
+ 1451  ls
+ 1452  cd src/
+ 1453  ls
+ 1454  cd beginner_tutorials/
+ 1455  ls
+ 1456  c dla
+ 1457  cd dla
+ 1458  cd launch/
+ 1459  ls
+ 1460  gedit turtlemimic.launch 
+ 1461  cd ..
+ 1462  cd ~
+ 1463  cd catkin_ws/
+ 1464  cd ..
+ 1465  vscode .bashrc 
+ 1466  code .bashrc 
+ 1467  cd catkin_ws/
+ 1468  code .bashrc 
+ 1469  ls
+ 1470  ls -a
+ 1471  cd ..
+ 1472  code .bashrc 
+ 1473  cd catkin_ws/
+ 1474  code .bashrc 
+ 1475  cd catkin_ws/
+ 1476  rosrun beginner_tutorials talker.py 
+ 1477  rocore
+ 1478  roscore
+ 1479  cd catkin_ws/
+ 1480  cd src/
+ 1481  ls
+ 1482  cd eysip/
+ 1483  ls
+ 1484  cd src/
+ 1485  ls
+ 1486  cd auto_eval/
+ 1487  ls
+ 1488  gedit test_case.py 
+ 1489  roscd catkin/
+ 1490  roscd catkin_ws
+ 1491  cd ~/catkin_ws/
+ 1492  cd src/beginner_tutorials/
+ 1493  ls
+ 1494  gedit talker.py 
+ 1495  gedit listener.py 
+ 1496  gedit talker.py 
+ 1497  rosrun beginner_tutorials month_of_year_client.py 4
+ 1498  roscd beginner_tutorials/scripts/
+ 1499  ls
+ 1500  ld
+ 1501  ls
+ 1502  cd ..
+ 1503  cd scripts/
+ 1504  gedit add_two_ints_client.py add_two_ints_server.py 
+ 1505  gedit month_of_year_server.py
+ 1506  gedit add_two_ints_client.py 
+ 1507  gedit month_of_year_client.py
+ 1508  ls
+ 1509  chmod +x scripts/month_of_year_client.py
+ 1510  chmod +x month_of_year_client.py
+ 1511  chmod +x month_of_year_server.py 
+ 1512  ls
+ 1513  cd ~/catkin_ws/
+ 1514  catkin_make
+ 1515  rosrun beginner_tutorials month_of_year_server.py 
+ 1516  catkin_make
+ 1517  rosrun beginner_tutorials month_of_year_server.py 
+ 1518  cd catkin_ws/
+ 1519  cd src/
+ 1520  cd eysip/
+ 1521  ls
+ 1522  cd src/
+ 1523  ls
+ 1524  cd auto_eval/
+ 1525  ls
+ 1526  gedit test_case_circle.py 
+ 1527  rosrun beginner_tutorials add_two_ints_server.py 
+ 1528  pid
+ 1529  process
+ 1530  rostopic list
+ 1531  rosservice list 
+ 1532  rosservice -h
+ 1533  rosservice call /month_of_year "a: 1" 
+ 1534  rosnode list
+ 1535  rosrun beginner_tutorials month_of_year_server.py 
+ 1536  cd catkin_ws/
+ 1537  cd src/beginner_tutorials/launch/
+ 1538  gedit month_of_year.launch 
+ 1539  gedit turtlemimic.launch 
+ 1540  rosrun beginner_tutorials month_of_year_client.py 
+ 1541  gedit turtlemimic.launch 
+ 1542  gedit month_of_year.launch 
+ 1543  cd ..
+ 1544  gedit month_of_year_client.py 
+ 1545  rosrun beginner_tutorials add_two_ints_client.py 4 5 6
+ 1546  rosrun rqt_graph rqt_graph 
+ 1547  rosservice list 
+ 1548  rosservice -h
+ 1549  rosservice call /add_two_ints 3 4
+ 1550  rosrun beginner_tutorials add_two_ints_client.py 
+ 1551  rosrun beginner_tutorials add_two_ints_client.py  3 53
+ 1552  roscd beginner_tutorials/scripts/
+ 1553  code add_two_ints_clie.py 
+ 1554  rosrun beginner_tutorials add_two_ints_client.py  
+ 1555  rosrun beginner_tutorials add_two_ints_s.py  
+ 1556  cd ..
+ 1557  cd srv
+ 1558  ls
+ 1559  cat AddTwoInts.srv 
+ 1560  gedit month_of_year
+ 1561  ls
+ 1562  rm month_of_year 
+ 1563  gedit month_of_year.srv
+ 1564  ls
+ 1565  cat month_of_year.srv 
+ 1566  cd ..
+ 1567  ls
+ 1568  gedit CMakeLists.txt 
+ 1569  cd ~/catkin_ws/
+ 1570  roscd
+ 1571  cd ..
+ 1572  roscd beginner_tutorials/
+ 1573  cd ../..
+ 1574  catkin_make install 
+ 1575  cd -
+ 1576  ls
+ 1577  cd src
+ 1578  ls
+ 1579  cd ..
+ 1580  ls
+ 1581  cd ..
+ 1582  cd devel/
+ 1583  ls
+ 1584  cd include/
+ 1585  ls
+ 1586  cd beginner_tutorials/
+ 1587  ls
+ 1588  cd ..
+ 1589  cd ~/catkin_ws/
+ 1590  cd src
+ 1591  ls
+ 1592  vd beginner_tutorials/
+ 1593  cd beginner_tutorials/
+ 1594  ls
+ 1595  cd srv/
+ 1596  ls
+ 1597  cat month_of_year.srv 
+ 1598  cd ..
+ 1599  cd scripts/
+ 1600  ls
+ 1601  gedit add_two_ints_server.py 
+ 1602  gedit month_of_year_server.py 
+ 1603  gedit month_of_year_client.py.py 
+ 1604  gedit month_of_year_client.py
+ 1605  gedit month_of_year_client.py add_two_ints_client.py 
+ 1606  gedit month_of_year_server.py 
+ 1607  gedit month_of_year_client.py 
+ 1608  cd ..
+ 1609  cd launch/
+ 1610  ls
+ 1611  gedit month_of_year.launch
+ 1612  ls
+ 1613  code month_of_year.launch
+ 1614  roslaunch beginner_tutorials month_of_year.launch 
+ 1615  code month_of_year.launch
+ 1616  cd ..
+ 1617  cd ~/catkin_ws/
+ 1618  cd src/
+ 1619  ls
+ 1620  cd eysip/
+ 1621  ls
+ 1622  cd src/
+ 1623  ls
+ 1624  cd test/
+ 1625  ls
+ 1626  cdgedit turtlesim_move_circle.launch 
+ 1627  gedit turtlesim_move_circle.launch 
+ 1628  cd ~/catkin_ws/src/beginner_tutorials/launch/
+ 1629  gedit month_of_year.launch 
+ 1630  roslaunch beginner_tutorials month_of_year.launch 
+ 1631  gedit month_of_year.launch 
+ 1632  gedit turtlemimic.launch 
+ 1633  roslaunch beginner_tutorials turtlemimic.launch 
+ 1634  cd ..
+ 1635  cd scripts/
+ 1636  ls
+ 1637  gedit month_of_year_client.py 
+ 1638  cd ..
+ 1639  cd l
+ 1640  cd launch/
+ 1641  roslaunch beginner_tutorials turtlemimic.launch 
+ 1642  roslaunch beginner_tutorials month_of_year.launch 
+ 1643  sudo apt-get git
+ 1644  sudo apt-get git-install-full
+ 1645  sudo apt-get install git-install-full
+ 1646  sudo apt-get install git
+ 1647  mkdir eysip_2020
+ 1648  git init
+ 1649  ls
+ 1650  cd eysip_2020/
+ 1651  git init
+ 1652  ls
+ 1653  ls -a
+ 1654  git config --global user.name NickNair
+ 1655  git config --global user.email  nikhilnicky972@gmail.com
+ 1656  git config --list
+ 1657  echo "hey mh" > readme
+ 1658  ls
+ 1659  git add readme 
+ 1660  git status readme 
+ 1661  git commit -m "initial commit" readme 
+ 1662  git commit -am "readme modified" readme 
+ 1663  git commit -am "readme modified" 
+ 1664  git log
+ 1665  echo "hey mhn" > readme
+ 1666  git commit -am "readme modified" readme 
+ 1667  git commit -am "readme modified" 
+ 1668  git log
+ 1669  cat readme 
+ 1670  echo "hey mhn" >> readme
+ 1671  cat readme 
+ 1672  git commit -am "readme modified again" 
+ 1673  git log
+ 1674  gedit welcome.sh
+ 1675  ls
+ 1676  git status 
+ 1677  git add welcome.sh 
+ 1678  git commit -am "readme modified again" 
+ 1679  git log
+ 1680  git log -p
+ 1681  history >>notes.txt
